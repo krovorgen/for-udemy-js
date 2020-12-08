@@ -11,6 +11,6 @@ describe("movie count test", () => {
 describe("Movie DB", () => {
   test("DB", () => {
     jest.spyOn(global.window, "prompt").mockImplementation(() => 4);
-    expect(personalMovieDB().movies).toBe(4);
+    expect(personalMovieDB().count).toBe(4);
   });
 });
